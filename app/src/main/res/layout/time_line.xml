@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85">
+
+        <FrameLayout
+            android:id="@+id/line"
+            android:layout_width="4dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:background="#C4C4C4"></FrameLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_gravity="center|top"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circle"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="20dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_weight="0.15">
+
+        <FrameLayout
+            android:layout_weight="0.3"
+            android:elevation="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@drawable/border_preview"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:foregroundGravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CBCBCB"
+                            android:textSize="8dp"
+                            android:text="08:00 AM 12 Feb 2007"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="9dp"
+                            android:text="Se restauro la capilla central"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:textSize="9dp"
+                            android:text="Ver Mas"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/arrow"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <FrameLayout
+                    android:layout_gravity="bottom"
+                    android:foregroundGravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_gravity="left"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginRight="2dp"/>
+                        <TextView
+                            android:textColor="#F47C7B"
+                            android:textSize="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Propuesto por JRKevin"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#27AE60"
+                            android:textSize="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Validado por Joaquin Mansilla"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check"
+                            android:layout_marginLeft="2dp"/>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

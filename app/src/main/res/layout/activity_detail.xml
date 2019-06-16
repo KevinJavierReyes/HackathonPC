@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arrow2"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <TextView
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="#828282"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:padding="5dp"
+                    android:text="AV. Rem ipsum solor sit 123"/>
+
+                <Button
+                    android:foregroundGravity="center"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="110dp"
+                    android:padding="5dp"
+                    android:textSize="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_height="30dp"
+                    android:text="Como llegar"
+                    android:drawableRight="@drawable/map"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp">
+                <Button
+                    android:elevation="0dp"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Monumental"
+                    android:textSize="18dp"
+                    android:textColor="#AEA8A8"
+                    android:textStyle="bold"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/bg_category"/>
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reseña"
+                    android:textSize="28dp"
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie quis nisi non porttitor. In id sapien est. Donec ac turpis lacus"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:textSize="16dp"/>
+
+                <LinearLayout
+                    android:paddingLeft="30dp"
+                    android:paddingTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/doc"/>
+                    <TextView
+                        android:gravity="center|left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado actual"
+                        android:textSize="16dp"
+                        android:textColor="#F47C7D"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linea de tiempo"
+                    android:textSize="28dp"
+                    android:textColor="#707070"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"/>
+
+                <Button
+                    android:foregroundGravity="center"
+                    android:layout_gravity="left"
+                    android:background="@drawable/bg_button"
+                    android:layout_width="110dp"
+                    android:padding="5dp"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="changeIntent"
+                    android:text="Agregar evento"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/RecycleTimeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>
